@@ -1,0 +1,56 @@
+\documentclass[14pt,aspectratio=169]{beamer}
+
+% Use Madrid theme with custom colors for a modern look
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+% Custom color scheme
+\definecolor{primaryblue}{RGB}{0, 118, 186}
+\definecolor{secondaryblue}{RGB}{0, 85, 150}
+\definecolor{lightgray}{RGB}{240, 240, 240}
+
+\setbeamercolor{structure}{fg=primaryblue}
+\setbeamercolor{palette primary}{bg=primaryblue,fg=white}
+\setbeamercolor{palette secondary}{bg=secondaryblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=lightgray,fg=black}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+% Metadata (will be replaced with user content)
+\title{{{TITLE}}}
+\author{{{AUTHOR}}}
+\date{\today}
+\institute{{{AFFILIATION}}}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+\titlepage
+\end{frame}
+
+% Outline
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+% Content placeholder
+{{CONTENT}}
+
+% Conclusion
+\begin{frame}{Conclusion}
+\begin{itemize}
+    \item Summary of key points
+    \item Next steps
+    \item Questions?
+\end{itemize}
+\end{frame}
+
+\end{document}

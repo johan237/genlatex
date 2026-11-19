@@ -1,0 +1,212 @@
+{
+  "startedAt": "2026-02-01T03:41:21.525Z",
+  "dryRun": false,
+  "basePath": "C:\\Users\\johan\\OneDrive\\Desktop\\genlatex\\genlatex\\data\\projects",
+  "bucket": "genlatex-projects",
+  "projects": [
+    {
+      "projectId": "028ae0b4-d632-46aa-a0de-edbedf3b4dcc",
+      "filesUploaded": 17,
+      "errors": []
+    },
+    {
+      "projectId": "0a416ebb-b084-4162-af81-f37078b54e0a",
+      "filesUploaded": 2,
+      "errors": []
+    },
+    {
+      "projectId": "0b8082c9-ccf0-476d-962b-234f73baf2db",
+      "filesUploaded": 20,
+      "errors": []
+    },
+    {
+      "projectId": "0c669d08-7a9f-4155-8662-28981db52540",
+      "filesUploaded": 1,
+      "errors": []
+    },
+    {
+      "projectId": "17600155279767ekiv4d2f",
+      "filesUploaded": 6,
+      "errors": []
+    },
+    {
+      "projectId": "18d03a53-7144-4096-b3a2-f5a399e0d6c3",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "23837a5a-664e-4201-b24a-f839e05b77f7",
+      "filesUploaded": 9,
+      "errors": []
+    },
+    {
+      "projectId": "2c08c2f9-6d8d-4cbd-9bae-187c0ffa8697",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "2c3d8d92-a77b-434b-b0f7-b1da643d0676",
+      "filesUploaded": 5,
+      "errors": []
+    },
+    {
+      "projectId": "405c5793-3d33-48b6-a586-67280a21a9c9",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "481e3eb4-a881-4d0d-9102-76f17a0f77fd",
+      "filesUploaded": 29,
+      "errors": []
+    },
+    {
+      "projectId": "4aa0a85f-8357-4eb5-8767-e5e2665779c2",
+      "filesUploaded": 12,
+      "errors": []
+    },
+    {
+      "projectId": "57ceb682-fcb2-45bd-8ba5-f416ddf91348",
+      "filesUploaded": 22,
+      "errors": []
+    },
+    {
+      "projectId": "64ed4511-33c1-4ef4-b5a0-cfafc9247db5",
+      "filesUploaded": 14,
+      "errors": []
+    },
+    {
+      "projectId": "70efd465-aece-4896-a3a5-f54a9fa1a37d",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "7250433d-6ae6-4001-9b25-013b69666cea",
+      "filesUploaded": 1,
+      "errors": []
+    },
+    {
+      "projectId": "8d52ba2c-0a88-4ade-a3ca-4484a0612b2d",
+      "filesUploaded": 6,
+      "errors": []
+    },
+    {
+      "projectId": "8e320f86-b158-46c3-aebf-dc677b296952",
+      "filesUploaded": 14,
+      "errors": []
+    },
+    {
+      "projectId": "96b2c58e-0385-4749-a838-66dc1843c0d7",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "986f8acf-9f76-46e2-a30d-5fb8c9ae720b",
+      "filesUploaded": 5,
+      "errors": []
+    },
+    {
+      "projectId": "9a7be670-83e5-499b-b861-4d691e3487fd",
+      "filesUploaded": 12,
+      "errors": []
+    },
+    {
+      "projectId": "9e0f1ba1-0fe8-4929-8185-5a808e9c6232",
+      "filesUploaded": 13,
+      "errors": []
+    },
+    {
+      "projectId": "a1cc8a9a-300a-463c-a00a-c5bc60f81162",
+      "filesUploaded": 22,
+      "errors": []
+    },
+    {
+      "projectId": "aa098b6b-facf-4fff-a570-826fc19376c7",
+      "filesUploaded": 12,
+      "errors": []
+    },
+    {
+      "projectId": "b237f8b8-7de9-460d-818f-9c2d90a14381",
+      "filesUploaded": 6,
+      "errors": []
+    },
+    {
+      "projectId": "bc47774b-3928-4521-8e30-5d094237ef39",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "bd06cefa-02fe-4b16-92b4-4e75363b8f19",
+      "filesUploaded": 5,
+      "errors": []
+    },
+    {
+      "projectId": "c0f8c79e-34fc-4926-94c7-6eadacbf0293",
+      "filesUploaded": 8,
+      "errors": []
+    },
+    {
+      "projectId": "cc3df5d4-1518-4813-b92f-cd21beca1d0f",
+      "filesUploaded": 9,
+      "errors": []
+    },
+    {
+      "projectId": "d1b5574b-95c7-4f3b-be88-6e2fe87fdb2f",
+      "filesUploaded": 7,
+      "errors": []
+    },
+    {
+      "projectId": "e45869ca-97ad-4f03-b648-da34aa683a38",
+      "filesUploaded": 1,
+      "errors": []
+    },
+    {
+      "projectId": "e6784a5f-3c9b-4524-9fb7-8fd765ffb33d",
+      "filesUploaded": 4,
+      "errors": []
+    },
+    {
+      "projectId": "f0f1fba4-f8f2-417c-958f-2991fa32ed1b",
+      "filesUploaded": 1,
+      "errors": []
+    },
+    {
+      "projectId": "fe9c1772-6c50-43b3-b5b3-91965116a40f",
+      "filesUploaded": 9,
+      "errors": []
+    },
+    {
+      "projectId": "temp-1760318945974",
+      "filesUploaded": 0,
+      "errors": []
+    },
+    {
+      "projectId": "temp-1760319381614",
+      "filesUploaded": 0,
+      "errors": []
+    },
+    {
+      "projectId": "temp-1760319740682",
+      "filesUploaded": 0,
+      "errors": []
+    },
+    {
+      "projectId": "temp-1760320303128",
+      "filesUploaded": 1,
+      "errors": []
+    },
+    {
+      "projectId": "temp-1760320694543",
+      "filesUploaded": 1,
+      "errors": []
+    },
+    {
+      "projectId": "temp-1760321774103",
+      "filesUploaded": 1,
+      "errors": []
+    }
+  ],
+  "totalFiles": 323,
+  "totalErrors": 0,
+  "errors": [],
+  "finishedAt": "2026-02-01T03:41:24.860Z"
+}

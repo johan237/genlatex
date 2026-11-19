@@ -1,0 +1,365 @@
+[
+  {
+    "title": "Machine learning in healthcare: review, opportunities and challenges",
+    "authors": [
+      "Unknown authors"
+    ],
+    "year": 2021,
+    "venue": "Machine Learning and the Internet of Medical Things in Healthcare",
+    "abstract": "This paper provides a comprehensive review of machine learning in healthcare, outlining the opportunities and challenges in its application. It delves into various aspects of how ML can transform healthcare practices.",
+    "url": "https://www.semanticscholar.org/paper/b7d00c2d58004ed9ba4ccf5590237cad16d85b74",
+    "citation_key": "authors2021Machine",
+    "source_type": "academic"
+  },
+  {
+    "title": "Federated machine learning in healthcare: A systematic review on clinical applications and technical architecture",
+    "authors": [
+      "Zhen Ling Teo",
+      "Liyuan Jin",
+      "Siqi Li",
+      "Di Miao",
+      "Xiaoman Zhang",
+      "Wei Yan Ng",
+      "Ting Fang Tan",
+      "Deborah Meixuan Lee",
+      "Kai Jie Chua",
+      "John Heng",
+      "Yong Liu",
+      "R. Goh",
+      "D. Ting"
+    ],
+    "year": 2024,
+    "venue": "Cell Reports Medicine",
+    "abstract": "This systematic review explores federated machine learning in healthcare, focusing on its clinical applications and technical architecture. It highlights how this approach can address data privacy concerns in collaborative medical research.",
+    "url": "https://www.semanticscholar.org/paper/95e239db43b53a3d0f40f66acdacdce915fe50be",
+    "citation_key": "Teo2024Federated",
+    "source_type": "academic"
+  },
+  {
+    "title": "Privacy‐preserving data mining and machine learning in healthcare: Applications, challenges, and solutions",
+    "authors": [
+      "V. Naresh",
+      "Muthusamy Thamarai"
+    ],
+    "year": 2023,
+    "venue": "WIREs Data. Mining. Knowl. Discov.",
+    "abstract": "This paper discusses privacy and security challenges in data mining and machine learning applications within medical diagnostic systems. It proposes solutions to address the sensitive nature of healthcare data, emphasizing the importance of privacy-preserving techniques.",
+    "url": "https://www.semanticscholar.org/paper/b8a60a97ec164112332eb5165fe612be4f8302b1",
+    "citation_key": "Naresh2023Privacy",
+    "source_type": "academic"
+  },
+  {
+    "title": "AI and Machine Learning in Healthcare - Applications, Challenges and Ethics",
+    "authors": [
+      "Swapna Nadakuditi",
+      "Bhargava Kumar",
+      "Tejaswini Kumar"
+    ],
+    "year": 2024,
+    "venue": "International Journal of Health Sciences",
+    "abstract": "This research aims to discuss the applications of AI and machine learning in healthcare, along with the associated implementation challenges and ethical considerations. It also touches upon the regulatory landscape surrounding the widespread adoption of AI in healthcare.",
+    "url": "https://www.semanticscholar.org/paper/3332b3e6a64fb7550e30d35beada962e2b09c81d",
+    "citation_key": "Nadakuditi2024AI",
+    "source_type": "academic"
+  },
+  {
+    "title": "Privacy-preserving machine learning for healthcare: open challenges and future perspectives",
+    "authors": [
+      "Alejandro Guerra-Manzanares",
+      "L. Julian Lechuga Lopez",
+      "Michail Maniatakos",
+      "Farah E. Shamout"
+    ],
+    "year": 2023,
+    "venue": "",
+    "abstract": "This paper examines the open challenges and future perspectives of privacy-preserving machine learning in healthcare. It emphasizes the critical need for privacy considerations throughout the entire ML pipeline due to the sensitive nature of medical data.",
+    "url": "http://arxiv.org/abs/2303.15563v1",
+    "citation_key": "Guerra-Manzanares2023Privacy",
+    "source_type": "academic"
+  },
+  {
+    "title": "Beyond Volume: The Impact of Complex Healthcare Data on the Machine Learning Pipeline",
+    "authors": [
+      "Keith Feldman",
+      "Louis Faust",
+      "Xian Wu",
+      "Chao Huang",
+      "Nitesh V. Chawla"
+    ],
+    "year": 2017,
+    "venue": "",
+    "abstract": "This paper explores the impact of complex healthcare data on the machine learning pipeline, highlighting the challenges and opportunities presented by the digital transformation of healthcare. It discusses data ranging from electronic health records to digitized imaging.",
+    "url": "http://arxiv.org/abs/1706.01513v2",
+    "citation_key": "Feldman2017Beyond",
+    "source_type": "academic"
+  },
+  {
+    "title": "Using machine learning for healthcare challenges and opportunities",
+    "authors": [
+      "A Alanazi"
+    ],
+    "year": 2022,
+    "venue": "Informatics in Medicine Unlocked",
+    "abstract": "This article discusses the challenges and opportunities of using machine learning in healthcare. It highlights the growing attention on ML applications to improve healthcare and how supervised learning can be used for this purpose.",
+    "url": "https://scholar.google.com/scholar?q=machine+learning+in+healthcare+challenges",
+    "citation_key": "Alanazi2022Using",
+    "source_type": "academic"
+  },
+  {
+    "title": "The impact of artificial intelligence in medicine on the future role of the physician",
+    "authors": [
+      "AS Ahuja"
+    ],
+    "year": 2019,
+    "venue": "PeerJ",
+    "abstract": "This research investigates the potential uses of AI in medicine and considers its impact on the future role of physicians. It explores whether AI might replace or supplement the work of medical professionals.",
+    "url": "https://scholar.google.com/scholar?q=AI+in+medicine+impact",
+    "citation_key": "Ahuja2019The",
+    "source_type": "academic"
+  },
+  {
+    "title": "Artificial intelligence (AI) in medicine, current applications and future role with special emphasis on its potential and promise in pathology: present and future impact",
+    "authors": [
+      "Z Ahmad",
+      "S Rahim",
+      "M Zubair",
+      "J Abdul-Ghafar"
+    ],
+    "year": 2021,
+    "venue": "Diagnostic pathology",
+    "abstract": "This paper discusses the current applications and future role of artificial intelligence in medicine, with a particular focus on its potential in pathology. It highlights the rapid expansion of AI's role in the medical field.",
+    "url": "https://scholar.google.com/scholar?q=AI+in+medicine+impact",
+    "citation_key": "Ahmad2021Artificial",
+    "source_type": "academic"
+  },
+  {
+    "title": "Evaluating Whether a Concurrent Retinoid X Receptor Agonist can Enhance the Efficacy of the HER2-IGFPB2-IGF1R Vaccine in Eliminating Existing Ductal Carcinoma in Situ and Preventing Progression of Inv",
+    "authors": [
+      "GRUBBS",
+      "CLINTON"
+    ],
+    "year": 2018,
+    "venue": "UNIVERSITY OF ALABAMA AT BIRMINGHAM (NIH Project)",
+    "abstract": "This NIH-funded project investigates the efficacy of a vaccine in preventing the progression of invasive breast cancer. It explores how immunotherapy against specific antigens can offer a new approach to breast cancer prevention.",
+    "url": "https://reporter.nih.gov/project-details/261201500036I-0-26100009-2",
+    "citation_key": "GRUBBS2018Evaluating",
+    "source_type": "academic"
+  },
+  {
+    "title": "Privacy-preserving machine learning for healthcare: open challenges and future perspectives",
+    "authors": [
+      "Alejandro Guerra-Manzanares",
+      "L. Julian Lechuga Lopez",
+      "Michail Maniatakos",
+      "Farah E. Shamout"
+    ],
+    "year": 2023,
+    "venue": "arXiv",
+    "abstract": "This paper discusses the critical aspect of privacy in machine learning for healthcare, outlining open challenges and future perspectives. It emphasizes that due to the sensitive nature of medical data, privacy must be considered throughout the entire ML pipeline, from model training to deployment.",
+    "url": "http://arxiv.org/abs/2303.15563v1",
+    "citation_key": "Guerra-Manzanares2023Privacy1",
+    "source_type": "academic"
+  },
+  {
+    "title": "Beyond Volume: The Impact of Complex Healthcare Data on the Machine Learning Pipeline",
+    "authors": [
+      "Keith Feldman",
+      "Louis Faust",
+      "Xian Wu",
+      "Chao Huang",
+      "Nitesh V. Chawla"
+    ],
+    "year": 2017,
+    "venue": "arXiv",
+    "abstract": "This paper explores the impact of complex healthcare data on the machine learning pipeline, moving beyond simply data volume. It highlights how the transition to digital healthcare, including electronic health records and digitized imaging, presents unique challenges and opportunities for ML.",
+    "url": "http://arxiv.org/abs/1706.01513v2",
+    "citation_key": "Feldman2017Beyond1",
+    "source_type": "academic"
+  },
+  {
+    "title": "Ethical machine learning in healthcare",
+    "authors": [
+      "IY Chen",
+      "E Pierson",
+      "S Rose",
+      "S Joshi…"
+    ],
+    "year": 2021,
+    "venue": "annualreviews.org (Google Scholar)",
+    "abstract": "This review focuses on establishing an ethical pipeline for machine learning model development in healthcare. It addresses various ethical considerations at each stage, with a particular emphasis on social justice implications in the context of healthcare AI.",
+    "url": "https://scholar.google.com/scholar?q=machine+learning+in+healthcare+ethics",
+    "citation_key": "Chen2021Ethical",
+    "source_type": "academic"
+  },
+  {
+    "title": "Identifying ethical considerations for machine learning healthcare applications",
+    "authors": [
+      "DS Char",
+      "MD Abràmoff",
+      "C Feudtner"
+    ],
+    "year": 2020,
+    "venue": "Taylor & Francis (Google Scholar)",
+    "abstract": "This paper identifies key ethical considerations pertinent to machine learning healthcare applications (ML-HCAs). It examines how these applications, although promising for healthcare delivery, raise a number of ethical challenges that need careful navigation.",
+    "url": "https://scholar.google.com/scholar?q=machine+learning+in+healthcare+ethics",
+    "citation_key": "Char2020Identifying",
+    "source_type": "academic"
+  },
+  {
+    "title": "Machine learning medical imaging",
+    "authors": [
+      "Unknown (IEEE Xplore)"
+    ],
+    "year": null,
+    "venue": "IEEE Xplore",
+    "abstract": "This search result from IEEE Xplore points to research on machine learning in medical imaging. This area is crucial for diagnostics, image analysis, and treatment planning, showcasing ML's impact on visual data interpretation in healthcare.",
+    "url": "Not directly available, search via Semantic Scholar recommended.",
+    "citation_key": "Xplore)ndMachine",
+    "source_type": "academic"
+  },
+  {
+    "title": "Machine learning electronic health records",
+    "authors": [
+      "Unknown (ACM Digital Library)"
+    ],
+    "year": null,
+    "venue": "ACM Digital Library",
+    "abstract": "This ACM Digital Library result highlights the application of machine learning to electronic health records (EHRs). This involves developing algorithms for tasks like predictive analytics, disease phenotyping, and personalized treatment recommendations using vast EHR datasets.",
+    "url": "Not directly available, search via Semantic Scholar recommended.",
+    "citation_key": "Library)ndMachine",
+    "source_type": "academic"
+  },
+  {
+    "title": "Machine learning applications in healthcare",
+    "authors": [
+      "Dallora Moraes",
+      "Ana Luíza"
+    ],
+    "year": 2020,
+    "venue": "",
+    "abstract": "None",
+    "url": "https://www.semanticscholar.org/paper/50172c883f1db0ba2aa43e73c464e348a31f4138",
+    "citation_key": "Moraes2020Machine",
+    "source_type": "academic"
+  },
+  {
+    "title": "Machine Learning Applications in Healthcare",
+    "authors": [
+      "Vanshika",
+      "Neetu Gupta"
+    ],
+    "year": 2022,
+    "venue": "2022 10th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)",
+    "abstract": "The science of artificial intelligence, and specifically machine learning, has developed significantly in recent years. Similarly to how technology is always developing, healthcare practises are also changing. Machine learning technology is being gradually merged with medical research to improve overall healthcare.",
+    "url": "https://www.semanticscholar.org/paper/2cf2db0eb93d868a3add8dfa9271ebc5d06d597f",
+    "citation_key": "Vanshika2022Machine",
+    "source_type": "academic"
+  },
+  {
+    "title": "Machine Learning Applications in Healthcare: Current Trends and Future Prospects",
+    "authors": [
+      "Dr. José Gabriel Carrasco Ramírez.",
+      "Md.mafiqul Islam",
+      "Asm Ibnul Hasan Even"
+    ],
+    "year": 2024,
+    "venue": "Journal of Artificial Intelligence General science (JAIGS) ISSN:3006-4023",
+    "abstract": "The integration of machine learning (ML) in healthcare has witnessed remarkable advancements, transforming the landscape of medical diagnosis, treatment, and overall patient care. This article provides a comprehensive review of the current trends and future prospects of machine learning applications in healthcare.",
+    "url": "https://www.semanticscholar.org/paper/ac5adb1c2f7cc3741d040cf8e1b8195099437747",
+    "citation_key": "Ramírez.2024Machine",
+    "source_type": "academic"
+  },
+  {
+    "title": "Clinician checklist for assessing suitability of machine learning applications in healthcare",
+    "authors": [
+      "I. Scott",
+      "S. Carter",
+      "E. Coiera"
+    ],
+    "year": 2021,
+    "venue": "BMJ Health & Care Informatics",
+    "abstract": "Machine learning algorithms are being used to screen and diagnose disease, prognosticate and predict therapeutic responses. Hundreds of new algorithms are being developed, but whether they improve clinical decision making and patient outcomes remains uncertain. If clinicians are to use algorithms, they need a robust framework to assess their suitab...",
+    "url": "https://www.semanticscholar.org/paper/c9fa5f9069177800e35a929aaf94870951e6ef86",
+    "citation_key": "Scott2021Clinician",
+    "source_type": "academic"
+  },
+  {
+    "title": "Machine learning applications in healthcare clinical practice and research",
+    "authors": [
+      "N. Arkoudis",
+      "S. Papadakos"
+    ],
+    "year": 2025,
+    "venue": "World Journal of Clinical Cases",
+    "abstract": "Machine learning (ML) is a type of artificial intelligence that assists computers in the acquisition of knowledge through data analysis, thus creating machines that can complete tasks otherwise requiring human intelligence. Among its various applications, it has proven groundbreaking in healthcare and medical research.",
+    "url": "https://www.semanticscholar.org/paper/6f1ba114ccabe37a282dbed0540ec036bd03c229",
+    "citation_key": "Arkoudis2025Machine",
+    "source_type": "academic"
+  },
+  {
+    "title": "How can Biomedical Engineers help empower Individuals with Intellectual Disabilities? The Potential Benefits and Challenges of AI Technologies to Support Inclusivity and Transform Lives",
+    "authors": [
+      "Alessandro Di Nuovo"
+    ],
+    "year": 2023,
+    "venue": "IEEE Journal of Translational Engineering in Health and Medicine",
+    "abstract": "None",
+    "url": "https://www.semanticscholar.org/paper/5bb71a4b4dc4e396cd094b2ff111717ade90cafc",
+    "citation_key": "Nuovo2023How",
+    "source_type": "academic"
+  },
+  {
+    "title": "AI in Mobile Health Apps: Transforming Chronic Disease Management",
+    "authors": [
+      "Sridhar Rao Muthineni"
+    ],
+    "year": 2025,
+    "venue": "International Journal of Scientific Research in Computer Science Engineering and Information Technology",
+    "abstract": "This article explores the transformative potential of artificial intelligence (AI) in mobile health (mHealth) applications for chronic disease management. The article examines how AI-powered mHealth apps are revolutionizing healthcare delivery through personalized treatment plans, real-time monitoring, and predictive analytics.",
+    "url": "https://www.semanticscholar.org/paper/e7cd27b2a32235d22dbf07f251264039bd1d940a",
+    "citation_key": "Muthineni2025AI",
+    "source_type": "academic"
+  },
+  {
+    "title": "A Literature Survey on AI Health Care System",
+    "authors": [
+      "Sachin Shetty V S",
+      "Vedanth M",
+      "Manjunath S"
+    ],
+    "year": 2024,
+    "venue": "International Journal of Advanced Research in Science, Communication and Technology",
+    "abstract": "The integration of Artificial Intelligence (AI) in healthcare systems has witnessed remarkable progress in recent years, revolutionizing the landscape of patient care, diagnostics, and medical research. This paper provides a comprehensive survey of the diverse applications, challenges, and benefits of AI in healthcare.",
+    "url": "https://www.semanticscholar.org/paper/b5f34e29173fc5669f507800937a1e20095153b9",
+    "citation_key": "S2024A",
+    "source_type": "academic"
+  },
+  {
+    "title": "Federated learning, ethics, and the double black box problem in medical AI",
+    "authors": [
+      "Joshua Hatherley",
+      "Anders Søgaard",
+      "Angela Ballantyne",
+      "Ruben Pauwels"
+    ],
+    "year": 2025,
+    "venue": "arXiv.org",
+    "abstract": "Federated learning (FL) is a machine learning approach that allows multiple devices or institutions to collaboratively train a model without sharing their local data with a third-party. FL is considered a promising way to address patient privacy concerns in medical artificial intelligence. The ethical implications of FL are discussed.",
+    "url": "https://www.semanticscholar.org/paper/949cb11af850f2015f19a1e531840215fa93742b",
+    "citation_key": "Hatherley2025Federated",
+    "source_type": "academic"
+  },
+  {
+    "title": "Federated Learning in Healthcare: A Path Towards Decentralized and Secure Medical Insights",
+    "authors": [
+      "S. Mishra",
+      "Dr.Ritu Tandon"
+    ],
+    "year": 2024,
+    "venue": "INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+    "abstract": "The rise of artificial intelligence (AI) in healthcare has created opportunities for advanced predictive models and personalized treatments, yet the sensitive nature of medical data presents significant challenges in terms of privacy, security, and regulatory compliance. Federated Learning (FL) has emerged as a promising solution.",
+    "url": "https://www.semanticscholar.org/paper/2a5f1ba6668849d4b79512c3ea1f0ac018f774d3",
+    "citation_key": "Mishra2024Federated",
+    "source_type": "academic"
+  }
+]

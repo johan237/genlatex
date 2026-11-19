@@ -1,0 +1,24 @@
+{
+  "id": "standalone-modern-presentation",
+  "name": "Modern Professional Presentation",
+  "category": "presentation",
+  "version": "1.0.0",
+  "description": "Standalone modern presentation with Madrid theme and custom colors. No external dependencies.",
+  "style": "modern",
+  "colorScheme": "blue",
+  "features": ["standalone", "no-dependencies", "modern", "professional"],
+  "packages": ["tikz", "booktabs", "graphicx"],
+  "preview": "preview.png",
+  "thumbnail": "thumbnail.png",
+  "bestFor": ["business", "technical", "academic", "general"],
+  "difficulty": "beginner",
+  "customizable": {
+    "colors": true,
+    "fonts": true,
+    "layout": false,
+    "sections": true
+  },
+  "author": "GenLaTeX",
+  "license": "MIT",
+  "tags": ["modern", "professional", "standalone", "beamer", "blue"]
+}

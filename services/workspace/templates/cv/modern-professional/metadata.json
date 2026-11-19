@@ -1,0 +1,50 @@
+{
+  "id": "modern-professional-cv",
+  "name": "Modern Professional CV",
+  "category": "cv",
+  "version": "1.0.0",
+  "description": "Clean, modern CV with sidebar layout, icons, and professional styling. Perfect for tech professionals, engineers, and managers.",
+  "style": "modern",
+  "colorScheme": "blue",
+  "features": [
+    "sidebar-layout",
+    "icons",
+    "skills-bars",
+    "timeline",
+    "two-column",
+    "customizable-colors"
+  ],
+  "packages": [
+    "geometry",
+    "fontawesome5",
+    "xcolor",
+    "tikz",
+    "enumitem",
+    "hyperref"
+  ],
+  "preview": "preview.png",
+  "thumbnail": "thumbnail.png",
+  "bestFor": [
+    "software-engineers",
+    "product-managers",
+    "designers",
+    "tech-professionals"
+  ],
+  "difficulty": "beginner",
+  "customizable": {
+    "colors": true,
+    "fonts": true,
+    "layout": false,
+    "sections": true
+  },
+  "author": "GenLaTeX",
+  "license": "MIT",
+  "tags": [
+    "modern",
+    "professional",
+    "sidebar",
+    "icons",
+    "tech",
+    "colorful"
+  ]
+}

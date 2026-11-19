@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-02-16",
+  "categories": {
+    "cv": {
+      "name": "Curriculum Vitae & Resumes",
+      "description": "Professional CV and resume templates",
+      "templates": []
+    },
+    "report": {
+      "name": "Reports & Documents",
+      "description": "Business reports, technical documents, and white papers",
+      "templates": []
+    },
+    "presentation": {
+      "name": "Presentations & Slides",
+      "description": "Beamer presentations and slide decks",
+      "templates": []
+    },
+    "letter": {
+      "name": "Letters & Correspondence",
+      "description": "Formal letters, cover letters, and correspondence",
+      "templates": []
+    },
+    "article": {
+      "name": "Articles & Papers",
+      "description": "Academic papers, articles, and publications",
+      "templates": []
+    }
+  },
+  "colorSchemes": {
+    "corporate-blue": {
+      "primary": "#2980b9",
+      "secondary": "#34495e",
+      "accent": "#e74c3c",
+      "text": "#2c3e50",
+      "background": "#ffffff"
+    },
+    "creative-purple": {
+      "primary": "#8e44ad",
+      "secondary": "#9b59b6",
+      "accent": "#f1c40f",
+      "text": "#2c3e50",
+      "background": "#ffffff"
+    },
+    "minimal-gray": {
+      "primary": "#34495e",
+      "secondary": "#95a5a6",
+      "accent": "#1abc9c",
+      "text": "#2c3e50",
+      "background": "#ffffff"
+    },
+    "professional-green": {
+      "primary": "#27ae60",
+      "secondary": "#2ecc71",
+      "accent": "#f39c12",
+      "text": "#2c3e50",
+      "background": "#ffffff"
+    },
+    "elegant-black": {
+      "primary": "#2c3e50",
+      "secondary": "#7f8c8d",
+      "accent": "#e67e22",
+      "text": "#2c3e50",
+      "background": "#ffffff"
+    }
+  },
+  "styleKeywords": {
+    "modern": ["clean", "contemporary", "fresh", "updated", "current"],
+    "minimal": ["simple", "clean", "white space", "uncluttered", "basic"],
+    "creative": ["unique", "artistic", "colorful", "bold", "innovative"],
+    "corporate": ["business", "professional", "formal", "enterprise"],
+    "academic": ["scholarly", "research", "formal", "traditional"],
+    "elegant": ["sophisticated", "refined", "classy", "polished"]
+  }
+}

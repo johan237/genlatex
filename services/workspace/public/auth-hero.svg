@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none" className="w-full h-auto max-h-[280px]">
+  <!-- Stylized document / editor window on primary background -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="24" width="320" height="232" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <!-- Title bar -->
+    <rect x="40" y="24" width="320" height="36" rx="8" fill="rgba(255,255,255,0.08)"/>
+    <rect x="56" y="24" width="320" height="36" rx="0" fill="transparent"/>
+    <circle cx="56" cy="42" r="6" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="76" cy="42" r="6" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="96" cy="42" r="6" fill="rgba(255,255,255,0.25)"/>
+    <rect x="120" y="36" width="120" height="12" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <!-- Text lines (LaTeX / content) -->
+    <rect x="56" y="76" width="280" height="8" rx="4" fill="rgba(255,255,255,0.35)"/>
+    <rect x="56" y="92" width="240" height="8" rx="4" fill="rgba(255,255,255,0.28)"/>
+    <rect x="56" y="108" width="260" height="8" rx="4" fill="rgba(255,255,255,0.28)"/>
+    <rect x="56" y="124" width="200" height="8" rx="4" fill="rgba(255,255,255,0.22)"/>
+    <rect x="56" y="140" width="268" height="8" rx="4" fill="rgba(255,255,255,0.22)"/>
+    <rect x="56" y="156" width="180" height="8" rx="4" fill="rgba(255,255,255,0.18)"/>
+    <!-- Accent: small "preview" panel -->
+    <rect x="224" y="180" width="120" height="60" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <rect x="236" y="192" width="40" height="6" rx="2" fill="rgba(255,255,255,0.25)"/>
+    <rect x="236" y="204" width="96" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+    <rect x="236" y="212" width="80" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+    <rect x="236" y="220" width="90" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
+  </g>
+  <defs>
+    <filter id="shadow" x="0" y="0">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.15)" flood-opacity="1"/>
+    </filter>
+  </defs>
+</svg>

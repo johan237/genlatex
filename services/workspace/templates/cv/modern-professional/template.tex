@@ -1,0 +1,121 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{multicol}
+
+% Color Definitions (Customizable)
+\definecolor{primary}{RGB}{41, 128, 185}      % Blue
+\definecolor{secondary}{RGB}{52, 73, 94}      % Dark Gray
+\definecolor{accent}{RGB}{231, 76, 60}        % Red
+\definecolor{textcolor}{RGB}{44, 62, 80}      % Text
+\definecolor{lightgray}{RGB}{236, 240, 241}   % Background
+
+% Custom Commands
+\newcommand{\cvname}[1]{%
+  {\Huge\bfseries\color{primary}#1}
+}
+
+\newcommand{\cvtitle}[1]{%
+  {\Large\color{secondary}#1}
+}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{10pt}
+  {\Large\bfseries\color{primary}#1}
+  \par\noindent\textcolor{primary}{\rule{\linewidth}{2pt}}
+  \vspace{5pt}
+}
+
+\newcommand{\cvsubsection}[1]{%
+  \vspace{5pt}
+  {\large\bfseries\color{secondary}#1}
+  \vspace{3pt}
+}
+
+\newcommand{\cvitem}[4]{%
+  \textbf{#1} \hfill \textcolor{secondary}{\textit{#2}} \\
+  \textit{#3} \hfill \textcolor{accent}{#4} \\
+  \vspace{2pt}
+}
+
+\newcommand{\cvskill}[2]{%
+  \textbf{#1} \hfill
+  \begin{tikzpicture}[baseline=-0.6ex]
+    \foreach \i in {1,...,5} {
+      \ifnum\i>#2
+        \filldraw[lightgray] (\i*0.3,0) circle (0.1);
+      \else
+        \filldraw[primary] (\i*0.3,0) circle (0.1);
+      \fi
+    }
+  \end{tikzpicture}
+  \\[2pt]
+}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdftitle={CV},
+    pdfauthor={Your Name}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+  \cvname{{{NAME}}} \\[5pt]
+  \cvtitle{{{TITLE}}} \\[10pt]
+
+  \faIcon{envelope} \href{mailto:{{EMAIL}}}{{{EMAIL}}} \quad
+  \faIcon{phone} {{PHONE}} \quad
+  \faIcon{map-marker-alt} {{LOCATION}} \\
+  \faIcon{linkedin} \href{{{LINKEDIN}}}{LinkedIn} \quad
+  \faIcon{github} \href{{{GITHUB}}}{GitHub} \quad
+  \faIcon{globe} \href{{{WEBSITE}}}{Website}
+\end{center}
+
+% Professional Summary
+\cvsection{\faIcon{user} Professional Summary}
+{{SUMMARY}}
+
+% Experience
+\cvsection{\faIcon{briefcase} Work Experience}
+
+{{EXPERIENCE_ITEMS}}
+
+% Education
+\cvsection{\faIcon{graduation-cap} Education}
+
+{{EDUCATION_ITEMS}}
+
+% Skills
+\cvsection{\faIcon{code} Technical Skills}
+
+\begin{multicols}{2}
+{{SKILLS}}
+\end{multicols}
+
+% Projects (Optional)
+\cvsection{\faIcon{project-diagram} Projects}
+
+{{PROJECTS}}
+
+% Certifications (Optional)
+\cvsection{\faIcon{certificate} Certifications}
+
+{{CERTIFICATIONS}}
+
+\end{document}

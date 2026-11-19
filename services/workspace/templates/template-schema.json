@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GenLaTeX Template Metadata",
+  "description": "Metadata schema for LaTeX templates",
+  "type": "object",
+  "required": ["id", "name", "category", "version"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique template identifier",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable template name"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["cv", "report", "presentation", "letter", "article"],
+      "description": "Document category"
+    },
+    "version": {
+      "type": "string",
+      "description": "Template version (semver)",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed template description"
+    },
+    "style": {
+      "type": "string",
+      "enum": ["modern", "minimal", "creative", "corporate", "academic", "elegant", "professional"],
+      "description": "Visual style"
+    },
+    "colorScheme": {
+      "type": "string",
+      "enum": ["blue", "purple", "green", "red", "orange", "gray", "black", "multi"],
+      "description": "Primary color scheme"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Template features (e.g., 'photo', 'timeline', 'icons')"
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Required LaTeX packages"
+    },
+    "preview": {
+      "type": "string",
+      "description": "Preview image filename"
+    },
+    "thumbnail": {
+      "type": "string",
+      "description": "Thumbnail image filename"
+    },
+    "bestFor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Recommended use cases"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced"],
+      "description": "Complexity level"
+    },
+    "customizable": {
+      "type": "object",
+      "properties": {
+        "colors": {"type": "boolean"},
+        "fonts": {"type": "boolean"},
+        "layout": {"type": "boolean"},
+        "sections": {"type": "boolean"}
+      }
+    },
+    "author": {
+      "type": "string",
+      "description": "Template author"
+    },
+    "license": {
+      "type": "string",
+      "description": "Template license"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Searchable tags"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+# ========================================
+# GENLATEX LAATEX EDITOR - ENVIRONMENT VARIABLES
+# ========================================
+
+# Database Configuration
+DATABASE_URL=postgresql://username:password@localhost:5432/genlatex
+
+# Authentication (Better Auth)
+BETTER_AUTH_SECRET=your-secret-here-generate-with-openssl-rand-base64-32
+BETTER_AUTH_URL=http://localhost:3000
+
+# Project Storage Path
+PROJECT_PATH=./data/projects
+
+# ========================================
+# AI MODEL CONFIGURATION
+# ========================================
+
+# AI Model Provider (OpenRouter)
+AI_MODEL=deepseek/deepseek-r1:free
+OPENROUTER_API_KEY=sk-or-v1-your-openrouter-api-key-here
+
+# ========================================
+# STRIPE CONFIGURATION (SERVER-SIDE ONLY)
+# ========================================
+
+# Stripe API Keys
+# Get these from: https://dashboard.stripe.com/apikeys
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key_here
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret_here
+
+# Stripe Product and Price IDs
+# Run from genlatex/: node scripts/create-stripe-products.js
+# Creates: $25/month and $21/month paid annually ($252/year). No tax included.
+STRIPE_PRO_PRODUCT_ID=prod_your_pro_product_id_here
+STRIPE_PRO_MONTHLY_PRICE_ID=price_your_monthly_price_id_here
+STRIPE_PRO_YEARLY_PRICE_ID=price_your_yearly_price_id_here
+
+# ========================================
+# CLIENT-SIDE CONFIGURATION
+# ========================================
+
+# Stripe Publishable Key (SAFE to expose to client)
+# This prefix allows Next.js to expose it to the browser
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key_here
+
+# Application Base URL
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+# ========================================
+# OPTIONAL AI CONFIGURATION
+# ========================================
+
+AI_TEMPERATURE=0.7
+AI_MAX_TOKENS=2000
+AI_TIMEOUT=30000
+AI_REQUEST_DELAY=1000
+AI_MAX_RETRIES=3
+

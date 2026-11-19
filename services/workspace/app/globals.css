@@ -1,0 +1,1405 @@
+/* SPDX-License-Identifier: MIT */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+@import '@radix-ui/themes/styles.css';
+
+
+
+
+
+@tailwind base;
+
+
+@tailwind components;
+
+
+@tailwind utilities;
+
+
+
+
+
+/* Highlighted line in Monaco editor */
+
+
+.highlighted-line {
+
+
+  background-color: rgba(255, 255, 0, 0.3) !important;
+
+
+  animation: highlightPulse 0.5s ease-in-out;
+
+
+}
+
+
+
+
+
+/* Highlighted text in Monaco editor */
+
+
+.highlighted-text {
+
+
+  background-color: rgba(255, 255, 0, 0.4) !important;
+
+
+  animation: highlightPulse 0.5s ease-in-out;
+
+
+}
+
+
+
+
+
+@keyframes highlightPulse {
+
+
+  0% {
+
+
+    background-color: rgba(255, 255, 0, 0.8);
+
+
+  }
+
+
+  100% {
+
+
+    background-color: rgba(255, 255, 0, 0.3);
+
+
+  }
+
+
+}
+
+
+
+
+
+@layer base {
+
+
+  :root {
+
+
+    /* GenLaTeX Brand Colors */
+
+
+    --genlatex-primary: #2563EB;
+
+
+    --genlatex-primary-dark: #1D4ED8;
+
+
+    --genlatex-primary-light: #3B82F6;
+
+
+    
+
+
+    /* Radix UI Theme Overrides */
+
+
+    --accent-9: var(--genlatex-primary);
+
+
+    --accent-10: var(--genlatex-primary-dark);
+
+
+    --accent-11: var(--genlatex-primary-light);
+
+
+    
+
+
+    /* Legacy color variables for compatibility */
+
+
+    --color-primary: #2563EB;
+
+
+    --color-background: #FDFDFD;
+
+
+    --color-foreground: #0F172A;
+
+
+    --color-muted: #F8FAFC;
+
+
+    --color-muted-foreground: #64748B;
+
+
+    --color-border: #E2E8F0;
+
+
+    --color-input: #FFFFFF;
+
+
+    --color-ring: #2563EB;
+
+
+    --color-card: #FFFFFF;
+
+
+    --color-sidebar: #F8FAFC;
+
+
+    --color-header: #FDFDFD;
+
+
+  }
+
+
+
+
+
+  .dark {
+
+
+    /* GenLaTeX Brand Colors for Dark Mode */
+
+
+    --genlatex-primary: #3B82F6;
+
+
+    --genlatex-primary-dark: #2563EB;
+
+
+    --genlatex-primary-light: #60A5FA;
+
+
+    
+
+
+    /* Radix UI Theme Overrides */
+
+
+    --accent-9: var(--genlatex-primary);
+
+
+    --accent-10: var(--genlatex-primary-dark);
+
+
+    --accent-11: var(--genlatex-primary-light);
+
+
+    
+
+
+    /* Legacy color variables for compatibility */
+
+
+    --color-primary: #3b82f6;
+
+
+    --color-background: #121212;
+
+
+    --color-foreground: #ffffff;
+
+
+    --color-muted: #1a1a1a;
+
+
+    --color-muted-foreground: #9ca3af;
+
+
+    --color-border: #2a2a2a;
+
+
+    --color-input: #1a1a1a;
+
+
+    --color-ring: #3b82f6;
+
+
+    --color-card: #1a1a1a;
+
+
+    --color-sidebar: #1a1a1a;
+
+
+    --color-header: #1a1a1a;
+
+
+  }
+
+
+
+
+
+  * {
+
+
+    border-color: var(--color-border);
+
+
+  }
+
+
+
+
+
+         body {
+
+
+           background-color: var(--color-background);
+
+
+           color: var(--color-foreground);
+
+
+           transition: background-color 0.3s ease, color 0.3s ease;
+
+
+           font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+
+         }
+
+
+
+
+
+         @keyframes spin {
+
+
+           from { transform: rotate(0deg); }
+
+
+           to { transform: rotate(360deg); }
+
+
+         }
+
+
+}
+
+
+
+
+
+/* Force pointer cursor on Radix UI Buttons (override default) */
+
+
+button.cursor-pointer {
+
+
+  cursor: pointer !important;
+
+
+}
+
+
+
+
+
+/* Error squiggly underline */
+
+
+.error-squiggle {
+
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 3' enable-background='new 0 0 6 3' height='3' width='6'%3E%3Cg fill='%23ff0000'%3E%3Cpolygon points='5.5,0 2.5,3 1.1,3 4.1,0'/%3E%3Cpolygon points='4,0 6,2 6,0.6 5.4,0'/%3E%3Cpolygon points='0,2 1,3 2.4,3 0,0.6'/%3E%3C/g%3E%3C/svg%3E") repeat-x bottom left;
+
+
+  padding-bottom: 2px;
+
+
+}
+
+
+
+
+
+/* Warning squiggly underline */
+
+
+.warning-squiggle {
+
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 3' enable-background='new 0 0 6 3' height='3' width='6'%3E%3Cg fill='%23ffa500'%3E%3Cpolygon points='5.5,0 2.5,3 1.1,3 4.1,0'/%3E%3Cpolygon points='4,0 6,2 6,0.6 5.4,0'/%3E%3Cpolygon points='0,2 1,3 2.4,3 0,0.6'/%3E%3C/g%3E%3C/svg%3E") repeat-x bottom left;
+
+
+  padding-bottom: 2px;
+
+
+}
+
+
+
+
+
+/* Compilation error line highlight */
+
+
+.compilation-error-line {
+
+
+  background: rgba(255, 0, 0, 0.1);
+
+
+  border-left: 3px solid #ff0000;
+
+
+}
+
+
+
+
+
+/* Error glyph in gutter (red dot) */
+
+
+.compilation-error-glyph {
+
+
+  background: #ff0000;
+
+
+  border-radius: 50%;
+
+
+  width: 8px !important;
+
+
+  height: 8px !important;
+
+
+  margin-left: 6px;
+
+
+  margin-top: 6px;
+
+
+}
+
+
+
+
+
+/* Monaco editor error line highlighting */
+
+
+.error-line-highlight {
+
+
+  background-color: rgba(255, 0, 0, 0.15) !important;
+
+
+  border-left: 3px solid #ff0000 !important;
+
+
+}
+
+
+
+
+
+.error-line-glyph {
+
+
+  background: #ff0000 !important;
+
+
+  width: 4px !important;
+
+
+  margin-left: 3px !important;
+
+
+}
+
+
+
+
+
+/* Warning line highlighting */
+
+
+.warning-line-highlight {
+
+
+  background-color: rgba(255, 193, 7, 0.15) !important;
+
+
+  border-left: 3px solid #ffc107 !important;
+
+
+}
+
+
+
+
+
+.warning-line-glyph {
+
+
+  background: #ffc107 !important;
+
+
+  width: 4px !important;
+
+
+  margin-left: 3px !important;
+
+
+}
+
+
+
+
+
+/* Unified Chat Interface Styles */
+
+
+.unified-chat-interface {
+
+
+  backdrop-filter: blur(8px);
+
+
+  -webkit-backdrop-filter: blur(8px);
+
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+
+}
+
+
+
+
+
+.dark .unified-chat-interface {
+
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
+
+
+}
+
+
+
+
+
+/* Chat History Panel - Top part */
+
+
+.chat-history-panel {
+
+
+  border-top-left-radius: 8px;
+
+
+  border-top-right-radius: 8px;
+
+
+  border-bottom-left-radius: 0;
+
+
+  border-bottom-right-radius: 0;
+
+
+}
+
+
+
+
+
+/* Command Bar - Bottom part */
+
+
+.command-bar-unified {
+
+
+  border-top-left-radius: 0;
+
+
+  border-top-right-radius: 0;
+
+
+  border-bottom-left-radius: 8px;
+
+
+  border-bottom-right-radius: 8px;
+
+
+}
+
+
+
+
+
+/* Command Bar Focus States */
+
+
+.command-bar-focused {
+
+
+  border-color: #2563EB !important;
+
+
+  box-shadow: 0 0 0 1px #2563EB;
+
+
+}
+
+
+
+
+
+/* File Mention Chips */
+
+
+.file-chip {
+
+
+  background-color: #e0f2fe;
+
+
+  color: #0369a1;
+
+
+  border: 1px solid #bae6fd;
+
+
+}
+
+
+
+
+
+.dark .file-chip {
+
+
+  background-color: #1e3a8a;
+
+
+  color: #dbeafe;
+
+
+  border: 1px solid #3b82f6;
+
+
+}
+
+
+
+
+
+/* Mode Toggle Animations */
+
+
+.mode-toggle {
+
+
+  transition: all 200ms ease-in-out;
+
+
+}
+
+
+
+
+
+.mode-toggle-execute {
+
+
+  background-color: #16a34a;
+
+
+}
+
+
+
+
+
+.mode-toggle-chat {
+
+
+  background-color: #2563EB;
+
+
+}
+
+
+
+
+
+/* Monaco marker (for native error display) */
+
+
+.monaco-editor .error-marker {
+
+
+  background-color: rgba(255, 0, 0, 0.3);
+
+
+}
+
+
+
+
+
+/* Blue italic error messages (like Overleaf) */
+
+
+.error-message-text {
+
+
+  color: #0066cc !important;
+
+
+  font-style: italic !important;
+
+
+  font-size: 0.9em !important;
+
+
+}
+
+
+
+
+
+
+
+
+/* Monaco Editor Custom Styles */
+
+
+.monaco-editor .margin {
+
+
+  background-color: #f8f9fa !important;
+
+
+}
+
+
+
+
+
+.monaco-editor .monaco-editor-background {
+
+
+  background-color: #ffffff !important;
+
+
+}
+
+
+
+
+
+/* Smooth transitions for editor elements */
+
+
+.monaco-editor .view-line {
+
+
+  transition: background-color 0.2s ease;
+
+
+}
+
+
+
+
+
+/* Custom scrollbar for Monaco */
+
+
+.monaco-editor .monaco-scrollable-element > .scrollbar > .slider {
+
+
+  background: rgba(0, 0, 0, 0.2);
+
+
+  border-radius: 3px;
+
+
+}
+
+
+
+
+
+.monaco-editor .monaco-scrollable-element > .scrollbar > .slider:hover {
+
+
+  background: rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+
+
+
+:root {
+
+
+  --color-primary: #2563EB;
+
+
+}
+
+
+
+
+
+html, body {
+
+
+  height: 100%;
+
+
+}
+
+
+
+
+
+body {
+
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+
+
+  color: #0f172a; /* slate-900 */
+
+
+  background-color: #ffffff;
+
+
+}
+
+
+
+
+
+/* LaTeX.js Preview Styling - Match PDF output */
+
+
+.latex-preview-content {
+
+
+  text-align: left;
+
+
+}
+
+
+
+
+
+.latex-preview-content .title {
+
+
+  text-align: center;
+
+
+  font-size: 1.5em;
+
+
+  font-weight: bold;
+
+
+  margin-top: 0;
+
+
+  margin-bottom: 0.5em;
+
+
+}
+
+
+
+
+
+.latex-preview-content .author {
+
+
+  text-align: center;
+
+
+  font-size: 1.2em;
+
+
+  margin-bottom: 0.3em;
+
+
+}
+
+
+
+
+
+.latex-preview-content .date {
+
+
+  text-align: center;
+
+
+  font-size: 1em;
+
+
+  margin-bottom: 2em;
+
+
+}
+
+
+
+
+
+.latex-preview-content h1,
+
+
+.latex-preview-content h2,
+
+
+.latex-preview-content h3 {
+
+
+  font-family: 'Computer Modern', serif;
+
+
+  font-weight: bold;
+
+
+  margin-top: 1em;
+
+
+  margin-bottom: 0.5em;
+
+
+}
+
+
+
+
+
+.latex-preview-content p {
+
+
+  text-align: justify;
+
+
+  text-indent: 0;
+
+
+  margin-top: 0;
+
+
+  margin-bottom: 1em;
+
+
+  hyphens: none;
+
+
+}
+
+
+
+
+
+.latex-preview-content .abstract {
+
+
+  margin-left: 2em;
+
+
+  margin-right: 2em;
+
+
+  font-size: 0.9em;
+
+
+}
+
+
+
+
+
+/* LaTeX maketitle styling */
+
+
+.latex-preview-content .maketitle {
+
+
+  text-align: center;
+
+
+  margin-bottom: 2em;
+
+
+}
+
+
+
+
+
+.latex-preview-content .maketitle .title {
+
+
+  font-size: 1.728em;
+
+
+  font-weight: bold;
+
+
+  margin-bottom: 0.5em;
+
+
+}
+
+
+
+
+
+.latex-preview-content .maketitle .author {
+
+
+  font-size: 1.2em;
+
+
+  margin-bottom: 0.3em;
+
+
+}
+
+
+
+
+
+.latex-preview-content .maketitle .date {
+
+
+  font-size: 1em;
+
+
+  margin-bottom: 0;
+
+
+}
+
+
+
+
+
+/* LaTeX text formatting commands */
+
+
+.latex-preview-content .textbf,
+
+
+.latex-preview-content b,
+
+
+.latex-preview-content strong {
+
+
+  font-weight: bold !important;
+
+
+}
+
+
+
+
+
+.latex-preview-content .textit,
+
+
+.latex-preview-content .emph,
+
+
+.latex-preview-content i,
+
+
+.latex-preview-content em {
+
+
+  font-style: italic !important;
+
+
+}
+
+
+
+
+
+.latex-preview-content .texttt,
+
+
+.latex-preview-content code,
+
+
+.latex-preview-content tt {
+
+
+  font-family: 'Courier New', Courier, monospace !important;
+
+
+}
+
+
+
+
+
+.latex-preview-content .underline,
+
+
+.latex-preview-content u {
+
+
+  text-decoration: underline !important;
+
+
+}
+
+
+
+
+
+.latex-preview-content .textsc {
+
+
+  font-variant: small-caps !important;
+
+
+}
+
+
+
+
+
+.latex-preview-content .textsf {
+
+
+  font-family: sans-serif !important;
+
+
+}
+
+
+
+
+
+.latex-preview-content .textrm {
+
+
+  font-family: serif !important;
+
+
+}
+
+
+
+
+
+/* Math mode styling */
+
+
+.latex-preview-content .math {
+
+
+  font-style: italic;
+
+
+}
+
+
+
+
+
+.latex-preview-content .displaymath {
+
+
+  display: block;
+
+
+  margin: 1em 0;
+
+
+  text-align: center;
+
+
+}
+
+
+
+
+
+/* Lists */
+
+
+.latex-preview-content ul,
+
+
+.latex-preview-content ol {
+
+
+  margin: 1em 0;
+
+
+  padding-left: 2em;
+
+
+}
+
+
+
+
+
+.latex-preview-content li {
+
+
+  margin: 0.5em 0;
+
+
+}
+
+
+
+
+
+/* Quotes */
+
+
+.latex-preview-content blockquote {
+
+
+  margin: 1em 2em;
+
+
+  font-style: italic;
+
+
+}
+
+
+
+
+
+/* Verbatim */
+
+
+.latex-preview-content .verbatim,
+
+
+.latex-preview-content pre {
+
+
+  font-family: 'Courier New', Courier, monospace;
+
+
+  background: #f5f5f5;
+
+
+  padding: 0.5em;
+
+
+  margin: 1em 0;
+
+
+  overflow-x: auto;
+
+
+}
+
+
+
+
+
+.btn-primary {
+
+
+  @apply inline-flex items-center justify-center rounded-md px-4 py-2 transition;
+
+
+  background-color: var(--color-primary);
+
+
+  color: white;
+
+
+}
+
+
+
+
+
+.btn-primary:hover {
+
+
+  background-color: #1d4ed8;
+
+
+}
+
+
+
+
+
+.btn-primary:active {
+
+
+  background-color: #1e40af;
+
+
+}
+
+
+
+
+
+/* PDF.js Text Layer Styles */
+
+
+.textLayer {
+
+
+  position: absolute;
+
+
+  top: 0;
+
+
+  left: 0;
+
+
+  right: 0;
+
+
+  bottom: 0;
+
+
+  color: transparent;
+
+
+  background: transparent;
+
+
+  user-select: text;
+
+
+  pointer-events: none;
+
+
+}
+
+
+
+
+
+.textLayer > div {
+
+
+  position: absolute;
+
+
+  white-space: pre;
+
+
+  cursor: text;
+
+
+  color: transparent;
+
+
+  background: transparent;
+
+
+  user-select: text !important;
+
+
+  -webkit-user-select: text !important;
+
+
+  -moz-user-select: text !important;
+
+
+  -ms-user-select: text !important;
+
+
+  pointer-events: none;
+
+
+}
+
+
+
+
+
+/* CRITICAL: Enable pointer events for SyncTeX-enabled text spans */
+
+
+.textLayer[data-synctex-enabled="true"] {
+
+
+  pointer-events: auto !important;
+
+
+}
+
+
+
+
+
+.textLayer[data-synctex-enabled="true"] > div {
+
+
+  pointer-events: auto !important;
+
+
+}
+
+
+
+
+
+.textLayer span[data-synctex-line] {
+
+
+  pointer-events: auto !important;
+
+
+  cursor: pointer !important;
+
+
+}
+
+
+
+
+
+/* Force enable pointer events on all text layer elements */
+
+
+.textLayer[data-synctex-enabled="true"],
+
+
+.textLayer[data-synctex-enabled="true"] * {
+
+
+  pointer-events: auto !important;
+
+
+  z-index: 10000 !important;
+
+
+}

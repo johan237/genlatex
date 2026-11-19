@@ -1,0 +1,348 @@
+# AI Research Paper Generator API Configuration
+# Copy this file to .env and update the values as needed
+
+# =============================================================================
+# REQUIRED API KEYS
+# =============================================================================
+
+# OpenRouter API (REQUIRED)
+# Create key: https://openrouter.ai/
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+
+# AI Model Configuration - Single model for all AI operations
+AI_MODEL=deepseek/deepseek-chat
+AI_MODEL_FALLBACK=deepseek/deepseek-r1:free
+
+# Vision models (image OCR + captioning)
+VISION_OCR_MODEL=deepseek/deepseek-ocr
+VISION_CAPTION_MODEL=deepseek/deepseek-ocr
+
+# Tavily API Key (OPTIONAL - for web search functionality)
+# Get your API key from: https://tavily.com/
+TAVILY_API_KEY=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
+
+# =============================================================================
+# DIRECTORY CONFIGURATION
+# =============================================================================
+
+# LaTeX template directory
+TEMPLATE_DIR=./template
+
+# Checkpoint storage directory (for resuming interrupted generations)
+CHECKPOINT_DIR=./checkpoints
+
+# Output directory for generated papers
+OUTPUT_DIR=./output
+
+# =============================================================================
+# SERVER CONFIGURATION
+# =============================================================================
+
+# Maximum number of concurrent paper generations
+MAX_CONCURRENT_PAPERS=5
+
+# Request timeout in seconds
+REQUEST_TIMEOUT=300
+
+# Server host (default: 0.0.0.0)
+SERVER_HOST=0.0.0.0
+
+# Server port (default: 8000)
+SERVER_PORT=8000
+
+# Base URL for GenLaTeX web app (used to persist ingested images)
+# GENLATEX_APP_URL=http://localhost:3000
+
+# Number of worker processes (for production)
+WORKERS=4
+
+# Enable auto-reload for development (true/false)
+RELOAD=false
+
+# Log level (critical, error, warning, info, debug, trace)
+LOG_LEVEL=info
+
+# =============================================================================
+# AI MODEL CONFIGURATION
+# =============================================================================
+
+# Optional OpenRouter headers (improve routing/attribution)
+# For localhost dev, these are fine to keep as below
+OPENROUTER_HTTP_REFERER=http://localhost:8000
+OPENROUTER_X_TITLE=GenLaTeX Agent
+
+# Maximum tokens for model responses
+MAX_TOKENS=4096
+
+# Temperature for model responses (0.0-1.0)
+TEMPERATURE=0.3
+
+# Optional. Raises max tool rounds for chat (e.g. add-references flows). Only increases the cap.
+# Set to 24 or 30 if you often hit "tool limit" when adding references or content.
+# GENLATEX_MAX_TOOL_ITERATIONS=24
+
+# =============================================================================
+# SEARCH CONFIGURATION
+# =============================================================================
+
+# Default maximum search results
+DEFAULT_MAX_SEARCH_RESULTS=5
+
+# Search timeout in seconds
+SEARCH_TIMEOUT=30
+
+# Enable semantic scholar search (true/false)
+ENABLE_SEMANTIC_SCHOLAR=true
+
+# Enable arXiv search (true/false)
+ENABLE_ARXIV=true
+
+# Enable web search via Tavily (true/false)
+ENABLE_WEB_SEARCH=true
+
+# =============================================================================
+# PAPER GENERATION CONFIGURATION
+# =============================================================================
+
+# Default words per page
+WORDS_PER_PAGE=600
+
+# Minimum paper pages
+MIN_PAPER_PAGES=1
+
+# Maximum paper pages
+MAX_PAPER_PAGES=50
+
+# Enable checkpointing (true/false)
+ENABLE_CHECKPOINTING=true
+
+# Checkpoint save interval in seconds
+CHECKPOINT_INTERVAL=60
+
+# =============================================================================
+# PARALLEL EXTRACTION CONFIGURATION
+# =============================================================================
+
+# Enable parallel article extraction for faster research (true/false)
+# When enabled, multiple sources are analyzed concurrently
+# Set to false to fall back to sequential processing if issues occur
+PARALLEL_EXTRACTION_ENABLED=true
+
+# Maximum number of concurrent extraction tasks per batch
+# Higher values = faster but more API load; 10 default, retries at 5 on rate limit
+PARALLEL_MAX_CONCURRENT=10
+
+# Timeout for parallel extraction in seconds (per batch)
+# Increase if extractions timeout frequently
+PARALLEL_TIMEOUT_SECONDS=300
+
+# =============================================================================
+# PARALLEL BATCH CONFIGURATION
+# =============================================================================
+
+# Max section research batches run in parallel (1=sequential, 2=2 batches at once)
+PARALLEL_SECTION_BATCHES=2
+
+# Sections per research batch (default 3)
+PARALLEL_SECTION_BATCH_SIZE=3
+
+# Max concurrent field-enforcement tasks per batch (summary, DOI, PDF per source)
+PARALLEL_FIELD_ENFORCEMENT_CONCURRENT=5
+
+# Field enforcement (researcher: populate insufficient source fields)
+# Tolerance: 0.85 = accept 85% of min words (e.g. 425/500). -15% below target is OK.
+FIELD_ENFORCEMENT_TOLERANCE=0.85
+# Max individual LLM calls before switching to synthesis (one call deduces multiple fields)
+FIELD_ENFORCEMENT_MAX_LLM_CALLS=3
+# Max trials of individual field population before synthesis fallback
+FIELD_ENFORCEMENT_MAX_TRIALS=2
+
+# Max sections written in parallel
+PARALLEL_WRITE_CONCURRENT=3
+
+# Per top-level write task timeout in seconds (prevents UI from stalling at writing 45%)
+PARALLEL_WRITE_SECTION_TIMEOUT_SEC=90
+
+# Heartbeat interval during writing batches (seconds)
+PARALLEL_WRITE_HEARTBEAT_SEC=12
+
+# Max sections humanized in parallel (batches of N)
+PARALLEL_HUMANIZE_CONCURRENT=5
+
+# Timeout for full humanization phase (seconds)
+PARALLEL_HUMANIZE_TIMEOUT_SEC=120
+
+# Max sections verified in parallel
+PARALLEL_VERIFY_CONCURRENT=2
+
+# =============================================================================
+# CITATION CONFIGURATION
+# =============================================================================
+
+# Minimum citation density (citations per 100 words)
+MIN_CITATION_DENSITY=2.0
+
+# Maximum unused sources percentage
+MAX_UNUSED_SOURCES_PERCENT=20.0
+
+# Enable automatic citation verification (true/false)
+ENABLE_CITATION_VERIFICATION=true
+
+# =============================================================================
+# SECURITY CONFIGURATION
+# =============================================================================
+
+# Enable API key authentication (true/false)
+ENABLE_API_AUTH=false
+
+# API key for client authentication (if enabled)
+API_KEY=your_api_key_here
+
+# Enable CORS (true/false)
+ENABLE_CORS=true
+
+# Allowed CORS origins (comma-separated)
+CORS_ORIGINS=*
+
+# Enable rate limiting (true/false)
+ENABLE_RATE_LIMITING=false
+
+# Rate limit requests per minute
+RATE_LIMIT_PER_MINUTE=60
+
+# =============================================================================
+# MONITORING AND LOGGING
+# =============================================================================
+
+# Enable request logging (true/false)
+ENABLE_REQUEST_LOGGING=true
+
+# Enable performance monitoring (true/false)
+ENABLE_PERFORMANCE_MONITORING=true
+
+# Log file path
+LOG_FILE=./logs/api.log
+
+# Maximum log file size in MB
+MAX_LOG_FILE_SIZE=100
+
+# Number of log files to keep
+LOG_FILE_BACKUP_COUNT=5
+
+# Storage retention (for scripts/cleanup-storage.py - run periodically to avoid disk bloat)
+# CHECKPOINT_RETENTION_DAYS=7
+# OUTPUT_RETENTION_DAYS=30
+# LOG_RETENTION_DAYS=14
+
+# =============================================================================
+# DEVELOPMENT CONFIGURATION
+# =============================================================================
+
+# Enable debug mode (true/false)
+DEBUG=false
+
+# Enable maintenance mode (true/false)
+MAINTENANCE_MODE=false
+
+# Enable API documentation (true/false)
+ENABLE_DOCS=true
+
+# Enable ReDoc documentation (true/false)
+ENABLE_REDOC=true
+
+# =============================================================================
+# EXTERNAL SERVICES
+# =============================================================================
+
+# Semantic Scholar API base URL
+SEMANTIC_SCHOLAR_BASE_URL=https://api.semanticscholar.org/graph/v1
+
+# arXiv API base URL
+ARXIV_BASE_URL=http://export.arxiv.org/api/query
+
+# Tavily API base URL
+TAVILY_BASE_URL=https://api.tavily.com
+
+# =============================================================================
+# ADVANCED CONFIGURATION
+# =============================================================================
+
+# Enable async processing (true/false)
+ENABLE_ASYNC_PROCESSING=true
+
+# Maximum retry attempts for failed operations
+MAX_RETRY_ATTEMPTS=3
+
+# Retry delay in seconds
+RETRY_DELAY=5
+
+# Enable compression for responses (true/false)
+ENABLE_COMPRESSION=true
+
+# Maximum request size in MB
+MAX_REQUEST_SIZE=50
+
+# Enable health check endpoint (true/false)
+ENABLE_HEALTH_CHECK=true
+
+# Health check interval in seconds
+HEALTH_CHECK_INTERVAL=30
+
+# =============================================================================
+# DATABASE CONFIGURATION (for future use)
+# =============================================================================
+
+# Database URL (if using database for paper storage)
+# DATABASE_URL=sqlite:///./papers.db
+
+# Enable database logging (true/false)
+# ENABLE_DB_LOGGING=false
+
+# =============================================================================
+# CACHING CONFIGURATION (for future use)
+# =============================================================================
+
+# Enable Redis caching (true/false)
+# ENABLE_REDIS_CACHE=false
+
+# Redis URL
+# REDIS_URL=redis://localhost:6379
+
+# Cache TTL in seconds
+# CACHE_TTL=3600
+
+# =============================================================================
+# NOTIFICATION CONFIGURATION (for future use)
+# =============================================================================
+
+# Enable email notifications (true/false)
+# ENABLE_EMAIL_NOTIFICATIONS=false
+
+# SMTP server
+# SMTP_SERVER=smtp.gmail.com
+
+# SMTP port
+# SMTP_PORT=587
+
+# SMTP username
+# SMTP_USERNAME=your_email@gmail.com
+
+# SMTP password
+# SMTP_PASSWORD=your_app_password
+
+# =============================================================================
+# BACKUP CONFIGURATION (for future use)
+# =============================================================================
+
+# Enable automatic backups (true/false)
+# ENABLE_AUTO_BACKUP=false
+
+# Backup interval in hours
+# BACKUP_INTERVAL=24
+
+# Backup retention days
+# BACKUP_RETENTION_DAYS=30
+
+# Backup storage path
+# BACKUP_STORAGE_PATH=./backups

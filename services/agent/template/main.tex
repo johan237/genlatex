@@ -1,0 +1,61 @@
+% ============================================================
+% GenLaTeX General Document Template
+% ============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% ------------------------------------------------------------
+% Packages
+% ------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% ------------------------------------------------------------
+% Metadata
+% ------------------------------------------------------------
+\title{{{TITLE}}}
+\author{{{AUTHOR}} \\ \textit{{{AFFILIATION}}} \\ \texttt{{{EMAIL}}}}
+\date{{{DATE}}}
+
+% ------------------------------------------------------------
+% Document
+% ------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+% ------------------------------------------------------------
+% Abstract and Keywords
+% ------------------------------------------------------------
+\begin{abstract}
+{{ABSTRACT}}
+\end{abstract}
+
+\noindent\textbf{Keywords:} {{KEYWORDS}}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------
+% Sections (dynamically generated)
+% ------------------------------------------------------------
+
+{{CONTENT}}
+
+% ------------------------------------------------------------
+% References
+% ------------------------------------------------------------
+\newpage
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,157 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{page-borders}[2026/02/17 Page Border Styles - Validated]
+
+% ============================================================
+% Page Border Styles Package
+% Pre-validated and guaranteed to work
+% Adds borders around entire pages
+% ============================================================
+
+\RequirePackage{xcolor}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+
+% ------------------------------------------------------------
+% Simple Page Border
+% ------------------------------------------------------------
+
+\newcommand{\enablesimplepageorder}{%
+    \AddToHook{shipout/background}{%
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width=1pt, black]
+                ($(current page.north west) + (1cm,-1cm)$) rectangle
+                ($(current page.south east) + (-1cm,1cm)$);
+        \end{tikzpicture}%
+    }%
+}
+
+% ------------------------------------------------------------
+% Double Page Border
+% ------------------------------------------------------------
+
+\newcommand{\enabledoublepageorder}{%
+    \AddToHook{shipout/background}{%
+        \begin{tikzpicture}[remember picture, overlay]
+            % Outer border
+            \draw[line width=1pt, black]
+                ($(current page.north west) + (1cm,-1cm)$) rectangle
+                ($(current page.south east) + (-1cm,1cm)$);
+            % Inner border
+            \draw[line width=0.5pt, black]
+                ($(current page.north west) + (1.3cm,-1.3cm)$) rectangle
+                ($(current page.south east) + (-1.3cm,1.3cm)$);
+        \end{tikzpicture}%
+    }%
+}
+
+% ------------------------------------------------------------
+% Colored Page Border
+% ------------------------------------------------------------
+
+\newcommand{\enablebluepageorder}{%
+    \AddToHook{shipout/background}{%
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width=2pt, blue!60]
+                ($(current page.north west) + (1cm,-1cm)$) rectangle
+                ($(current page.south east) + (-1cm,1cm)$);
+        \end{tikzpicture}%
+    }%
+}
+
+\newcommand{\enablegreenpageorder}{%
+    \AddToHook{shipout/background}{%
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width=2pt, green!60!black]
+                ($(current page.north west) + (1cm,-1cm)$) rectangle
+                ($(current page.south east) + (-1cm,1cm)$);
+        \end{tikzpicture}%
+    }%
+}
+
+% ------------------------------------------------------------
+% Thick Page Border
+% ------------------------------------------------------------
+
+\newcommand{\enablethickpageorder}{%
+    \AddToHook{shipout/background}{%
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width=3pt, black]
+                ($(current page.north west) + (1cm,-1cm)$) rectangle
+                ($(current page.south east) + (-1cm,1cm)$);
+        \end{tikzpicture}%
+    }%
+}
+
+% ------------------------------------------------------------
+% Decorative Corner Page Border
+% ------------------------------------------------------------
+
+\newcommand{\enablecornerpageorder}{%
+    \AddToHook{shipout/background}{%
+        \begin{tikzpicture}[remember picture, overlay]
+            % Main border
+            \draw[line width=1pt, black]
+                ($(current page.north west) + (1cm,-1cm)$) rectangle
+                ($(current page.south east) + (-1cm,1cm)$);
+
+            % Decorative corners (top-left)
+            \draw[line width=2pt, black]
+                ($(current page.north west) + (1cm,-1cm)$) --
+                ($(current page.north west) + (2.5cm,-1cm)$);
+            \draw[line width=2pt, black]
+                ($(current page.north west) + (1cm,-1cm)$) --
+                ($(current page.north west) + (1cm,-2.5cm)$);
+
+            % Decorative corners (top-right)
+            \draw[line width=2pt, black]
+                ($(current page.north east) + (-1cm,-1cm)$) --
+                ($(current page.north east) + (-2.5cm,-1cm)$);
+            \draw[line width=2pt, black]
+                ($(current page.north east) + (-1cm,-1cm)$) --
+                ($(current page.north east) + (-1cm,-2.5cm)$);
+
+            % Decorative corners (bottom-left)
+            \draw[line width=2pt, black]
+                ($(current page.south west) + (1cm,1cm)$) --
+                ($(current page.south west) + (2.5cm,1cm)$);
+            \draw[line width=2pt, black]
+                ($(current page.south west) + (1cm,1cm)$) --
+                ($(current page.south west) + (1cm,2.5cm)$);
+
+            % Decorative corners (bottom-right)
+            \draw[line width=2pt, black]
+                ($(current page.south east) + (-1cm,1cm)$) --
+                ($(current page.south east) + (-2.5cm,1cm)$);
+            \draw[line width=2pt, black]
+                ($(current page.south east) + (-1cm,1cm)$) --
+                ($(current page.south east) + (-1cm,2.5cm)$);
+        \end{tikzpicture}%
+    }%
+}
+
+% ------------------------------------------------------------
+% Disable Page Borders
+% ------------------------------------------------------------
+
+\newcommand{\disablepageorders}{%
+    \RemoveFromHook{shipout/background}%
+}
+
+% ------------------------------------------------------------
+% Usage Instructions (commented out)
+% ------------------------------------------------------------
+
+% Add ONE of these commands to your preamble:
+%
+% \enablesimplepageorder      % Simple single-line border
+% \enabledoublepageorder      % Double-line border
+% \enablebluepageorder        % Blue colored border
+% \enablegreenpageorder       % Green colored border
+% \enablethickpageorder       % Thick border
+% \enablecornerpageorder      % Decorative corner accents
+%
+% To remove borders:
+% \disablepageorders
+
+\endinput

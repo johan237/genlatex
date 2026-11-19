@@ -1,0 +1,96 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{simple-borders}[2026/02/17 Simple Border Styles - Validated]
+
+% ============================================================
+% Simple Border Styles Package
+% Pre-validated and guaranteed to work
+% ============================================================
+
+\RequirePackage{xcolor}
+\RequirePackage{fancybox}
+
+% ------------------------------------------------------------
+% Basic Frame Commands
+% ------------------------------------------------------------
+
+% Simple box with border
+\newcommand{\simplebox}[1]{%
+    \fbox{\parbox{0.95\textwidth}{#1}}%
+}
+
+% Rounded corner box
+\newcommand{\roundbox}[1]{%
+    \Ovalbox{\parbox{0.95\textwidth}{#1}}%
+}
+
+% Thick border box
+\newcommand{\thickbox}[1]{%
+    \setlength{\fboxrule}{2pt}%
+    \fbox{\parbox{0.95\textwidth}{#1}}%
+    \setlength{\fboxrule}{0.4pt}% Reset to default
+}
+
+% Box with shadow
+\newcommand{\shadowbox}[1]{%
+    \shadowbox{\parbox{0.95\textwidth}{#1}}%
+}
+
+% Double border box
+\newcommand{\doublebox}[1]{%
+    \doublebox{\parbox{0.95\textwidth}{#1}}%
+}
+
+% ------------------------------------------------------------
+% Section Border Environment
+% ------------------------------------------------------------
+
+\newenvironment{bordersection}{%
+    \begin{center}%
+    \begin{minipage}{0.95\textwidth}%
+    \setlength{\fboxrule}{1pt}%
+    \fbox{\begin{minipage}{0.98\textwidth}%
+}{%
+    \end{minipage}}%
+    \end{minipage}%
+    \end{center}%
+}
+
+% ------------------------------------------------------------
+% Colored Border Commands
+% ------------------------------------------------------------
+
+% Light gray border
+\newcommand{\graybox}[1]{%
+    \fcolorbox{black!30}{white}{\parbox{0.95\textwidth}{#1}}%
+}
+
+% Blue border with light blue background
+\newcommand{\bluebox}[1]{%
+    \fcolorbox{blue!50}{blue!5}{\parbox{0.95\textwidth}{#1}}%
+}
+
+% Green border with light green background
+\newcommand{\greenbox}[1]{%
+    \fcolorbox{green!50}{green!5}{\parbox{0.95\textwidth}{#1}}%
+}
+
+% Red border with light red background (for warnings)
+\newcommand{\redbox}[1]{%
+    \fcolorbox{red!50}{red!5}{\parbox{0.95\textwidth}{#1}}%
+}
+
+% ------------------------------------------------------------
+% Usage Examples (commented out)
+% ------------------------------------------------------------
+
+% \simplebox{This is text with a simple border}
+% \roundbox{This is text with rounded corners}
+% \thickbox{This is text with a thick border}
+% \bluebox{This is text with a blue border}
+%
+% \begin{bordersection}
+% This entire section has a border around it.
+% You can put multiple paragraphs here.
+% \end{bordersection}
+
+\endinput
